@@ -1,14 +1,10 @@
 import time
 
-# While loop
-row = 1
-while row <= 100:
+for row in range(1, 101):
     if row % 10 == 0:
         print(row)
     else:
         print("%02d" % row, end=" ")
-    row = row+1
-
 # Infinity loop
 number = 0
 while True:

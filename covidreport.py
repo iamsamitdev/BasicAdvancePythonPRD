@@ -4,7 +4,10 @@ r = requests.get('https://covid19.th-stat.com/api/open/today')
 
 url = 'https://notify-api.line.me/api/notify'
 token = 'qocgwRkAjYvUVhTfyjzHmSvzpcL9L8PUu5v24Df6eo3'
-headers = {'content-type': 'application/x-www-form-urlencoded', 'Authorization': 'Bearer '+token}
+headers = {
+    'content-type': 'application/x-www-form-urlencoded',
+    'Authorization': f'Bearer {token}',
+}
 
 msg1 = 'อัพเดตผู้ป่วยโควิด 19 ใหม่ในไทย ประจำวันที่ : ' + str(r.json()['UpdateDate'])+'\n'
 msg2 = 'จำนวนผู้ติดเชื้อรายใหม่ : ' + str(r.json()['NewConfirmed'])+'\n'

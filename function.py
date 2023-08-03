@@ -1,19 +1,18 @@
 #  การสร้างฟังก์ชันใน Python
 def hello(name):
-    print("Hello %s " % name)
+    print(f"Hello {name} ")
 
 
 # ฟังก์ชันแบบมี return value
 def area(width, height):
-    total = width * height
-    return total
+    return width * height
 
 
 # ฟังก์ชันแบบมีการกำหนดค่าเริ่มต้นให้กับ ตัวแปรที่รับค่า
 def show_info(name, salary=0, lang="Unknow"):
-    print('Name: %s' % name)
-    print('Salary: %s' % salary)
-    print('Language: %s' % lang)
+    print(f'Name: {name}')
+    print(f'Salary: {salary}')
+    print(f'Language: {lang}')
 
 # เรียกใช้ฟังก์ชัน hello(name)
 hello("Samit")

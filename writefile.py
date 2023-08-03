@@ -3,9 +3,8 @@ import time
 import csv
 row = 1
 while True:
-    f = open('mydata.txt', 'a')
-    f.write("Food\n")
-    print("Food %d" % row)
-    row = row + 1
-    time.sleep(2)
-    f.close()
+    with open('mydata.txt', 'a') as f:
+        f.write("Food\n")
+        print("Food %d" % row)
+        row = row + 1
+        time.sleep(2)

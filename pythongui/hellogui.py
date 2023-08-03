@@ -31,7 +31,7 @@ x_cordinate = int((screen_width/2) - (window_width/2))
 y_cordinate = int((screen_height/2) - (window_height/2))
 
 # กำหนดความกว้างและความสูงของหน้าต่างโปรแกรม
-mainFrm.geometry("{}x{}+{}+{}".format(window_width, window_height, x_cordinate, y_cordinate))
+mainFrm.geometry(f"{window_width}x{window_height}+{x_cordinate}+{y_cordinate}")
 
 # สร้าง Widget
 ttk.Label(mainFrm, text='ยอดเงิน (บาท): ').grid(column=0, row=0, padx=10, pady=10, sticky='e')
